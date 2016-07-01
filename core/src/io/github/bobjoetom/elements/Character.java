@@ -1,5 +1,7 @@
 package io.github.bobjoetom.elements;
 
+import com.badlogic.gdx.graphics.Texture;
+
 import java.util.ArrayList;
 
 import io.github.bobjoetom.elements.CharClass.CharClass;
@@ -30,6 +32,10 @@ public class Character {
     private int intelli;
     private int strength;
 
+    //Textures
+    private String texturePath;//TODO will be race
+    private Texture texture;
+
     private ArrayList<Item> inventory = new ArrayList<Item>();
 
     public Character() {
@@ -47,6 +53,23 @@ public class Character {
         dexiterity = 0;
         intelli = 0;
         strength = 0;
+    }
+
+
+    public Texture getTexture() {
+        return texture;
+    }
+
+    public void setTexture(String texture) {
+        this.texture = new Texture(texture);
+    }
+    public String getTexturePath() {
+        return texturePath;
+    }
+
+    public void setTexturePath(String texturePath) {
+        this.texturePath = texturePath;
+        setTexture(getTexturePath());
     }
 
     public int getX() {

@@ -21,6 +21,7 @@ public class Game extends State{
         player1.setName("Bob");
         player1.setX(1);
         player1.setY(1);
+        player1.setTexturePath("Player1");
     }
     @Override
     protected void handleInput() {
