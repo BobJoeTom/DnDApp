@@ -1,9 +1,25 @@
 package io.github.bobjoetom.elements;
 
+import com.badlogic.gdx.graphics.Texture;
+
 /**
  * Created by Brenden on 6/30/2016.
  */
 public class Item {
+    private String name;
+    private String discription;
+    private int x, y;
+    private String texturePath;
+    private Texture texture;
+
+    public Texture getTexture() {
+        return texture;
+    }
+
+    public void setTexture(String texture) {
+        this.texture = new Texture(texture);
+    }
+
     public String getName() {
         return name;
     }
@@ -42,10 +58,7 @@ public class Item {
 
     public void setTexturePath(String texturePath) {
         this.texturePath = texturePath;
+        setTexture(getTexturePath());
     }
 
-    private String name;
-    private String discription;
-    private int x, y;
-    private String texturePath;
 }

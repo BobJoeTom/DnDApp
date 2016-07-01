@@ -7,7 +7,7 @@ import io.github.bobjoetom.map.tiles.Tile;
 /**
  * Created by Brenden on 6/30/2016.
  */
-public class Tilemap {
+public class TileMap {
     //Map of tiles
     private ArrayList<Tile> map = new ArrayList<Tile>();
 
