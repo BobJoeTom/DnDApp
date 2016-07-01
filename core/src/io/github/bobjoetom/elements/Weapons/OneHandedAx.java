@@ -7,7 +7,7 @@ public class OneHandedAx extends Weapon{
     public void OneHandedAx(){
         setName("One Handed Ax");
         setDiscription("This is an ax");
-        setTexturePath("OneHandAX.jpeg");
+        setTexturePath("OneHandAx.png");
         setDamage(99999);
     }
 
