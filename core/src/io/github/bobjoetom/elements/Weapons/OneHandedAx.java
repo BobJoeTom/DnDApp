@@ -4,7 +4,7 @@ package io.github.bobjoetom.elements.Weapons;
  * Created by Brenden on 6/30/2016.
  */
 public class OneHandedAx extends Weapon{
-    public void OneHandedAx(){
+    public OneHandedAx(){
         setName("One Handed Ax");
         setDiscription("This is an ax");
         setTexturePath("OneHandAx.png");

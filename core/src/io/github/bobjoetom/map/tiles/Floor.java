@@ -4,7 +4,7 @@ package io.github.bobjoetom.map.tiles;
  * Created by Brenden on 6/30/2016.
  */
 public class Floor extends Tile{
-    public void Floor(int x, int y){
+    public Floor(int x, int y) {
         setTexturePath("Floor.png");
         setX(x);
         setY(y);
