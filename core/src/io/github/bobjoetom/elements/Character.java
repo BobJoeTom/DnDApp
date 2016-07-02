@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import io.github.bobjoetom.elements.CharClass.CharClass;
 import io.github.bobjoetom.elements.Races.Race;
 import io.github.bobjoetom.elements.Weapons.Weapon;
+import io.github.bobjoetom.elements.armor.Armor;
 
 /**
  * Created by Brenden on 6/30/2016.
@@ -18,7 +19,7 @@ public class Character {
     private CharClass charClass;
 
     private Weapon weaponItem;
-    private amor.Armor armorItem;
+    private Armor armorItem;
 
     //Stats
     private int vitality;
@@ -142,11 +143,11 @@ public class Character {
         damage = weaponItem.getDamage() + strength;
     }
 
-    public amor.Armor getArmorItem() {
+    public Armor getArmorItem() {
         return armorItem;
     }
 
-    public void setArmorItem(amor.Armor armorItem) {
+    public void setArmorItem(Armor armorItem) {
         this.armorItem = armorItem;
         armor = armorItem.getArmor();
 

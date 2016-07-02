@@ -4,35 +4,17 @@ import com.badlogic.gdx.graphics.Texture;
 
 import java.lang.Character;
 
+import io.github.bobjoetom.elements.Item;
+
 /**
  * Created by Brenden on 6/30/2016.
  */
-public abstract class Armor {
+public abstract class Armor extends Item{
     //Speacialty will be with specific armor class
     //Maybe overide the get armor code to get armor and do extra things
     int armor;
     private java.lang.Character user;
     private java.lang.Character attacker;
-
-    private String texturePath;
-    private Texture texture;
-
-    public Texture getTexture() {
-        return texture;
-    }
-
-    public void setTexture(String texture) {
-        this.texture = new Texture(texture);
-    }
-
-    public String getTexturePath() {
-        return texturePath;
-    }
-
-    public void setTexturePath(String texturePath) {
-        this.texturePath = texturePath;
-        setTexture(getTexturePath());
-    }
 
     public Character getUser() {
         return user;
