@@ -18,7 +18,7 @@ public class Character {
     private CharClass charClass;
 
     private Weapon weaponItem;
-    private Armor armorItem;
+    private amor.Armor armorItem;
 
     //Stats
     private int vitality;
@@ -142,11 +142,11 @@ public class Character {
         damage = weaponItem.getDamage() + strength;
     }
 
-    public Armor getArmorItem() {
+    public amor.Armor getArmorItem() {
         return armorItem;
     }
 
-    public void setArmorItem(Armor armorItem) {
+    public void setArmorItem(amor.Armor armorItem) {
         this.armorItem = armorItem;
         armor = armorItem.getArmor();
 

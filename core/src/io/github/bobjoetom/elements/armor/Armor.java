@@ -1,6 +1,7 @@
-package io.github.bobjoetom.elements;
+package io.github.bobjoetom.elements.armor;
 
-import java.lang.*;
+import com.badlogic.gdx.graphics.Texture;
+
 import java.lang.Character;
 
 /**
@@ -12,6 +13,26 @@ public abstract class Armor {
     int armor;
     private java.lang.Character user;
     private java.lang.Character attacker;
+
+    private String texturePath;
+    private Texture texture;
+
+    public Texture getTexture() {
+        return texture;
+    }
+
+    public void setTexture(String texture) {
+        this.texture = new Texture(texture);
+    }
+
+    public String getTexturePath() {
+        return texturePath;
+    }
+
+    public void setTexturePath(String texturePath) {
+        this.texturePath = texturePath;
+        setTexture(getTexturePath());
+    }
 
     public Character getUser() {
         return user;
