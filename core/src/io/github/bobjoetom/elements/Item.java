@@ -20,6 +20,15 @@ public class Item {
         this.texture = new Texture(texture);
     }
 
+    public String getTexturePath() {
+        return texturePath;
+    }
+
+    public void setTexturePath(String texturePath) {
+        this.texturePath = texturePath;
+        setTexture(getTexturePath());
+    }
+
     public String getName() {
         return name;
     }
@@ -50,15 +59,6 @@ public class Item {
 
     public void setY(int y) {
         this.y = y;
-    }
-
-    public String getTexturePath() {
-        return texturePath;
-    }
-
-    public void setTexturePath(String texturePath) {
-        this.texturePath = texturePath;
-        setTexture(getTexturePath());
     }
 
 }
