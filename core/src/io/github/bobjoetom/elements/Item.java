@@ -11,6 +11,8 @@ public class Item {
     private int x, y;
     private String texturePath;
     private Texture texture;
+    public final int WIDTH = 120;
+    public final int HEIGHT = 120;
 
     public Texture getTexture() {
         return texture;

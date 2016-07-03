@@ -16,12 +16,10 @@ public class MainClass extends ApplicationAdapter {
 	public static final String TITLE = "DnD App";
 	private GameStateManager gameStateManager;
 	SpriteBatch batch;
-	Texture img;
-	
+
 	@Override
 	public void create () {
 		batch = new SpriteBatch();
-		img = new Texture("badlogic.jpg");
 		gameStateManager = new GameStateManager();
 		gameStateManager.push(new MainMenu(gameStateManager));
 	}

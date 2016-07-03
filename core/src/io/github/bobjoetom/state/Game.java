@@ -1,19 +1,18 @@
 package io.github.bobjoetom.state;
 
-import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 
 import io.github.bobjoetom.elements.Character;
 import io.github.bobjoetom.map.FirstMap;
-import io.github.bobjoetom.map.TileMap;
+import io.github.bobjoetom.map.Map;
 
 /**
  * Created by Brenden on 6/30/2016.
  */
 public class Game extends State{
     Character player1;
-    TileMap theMap = new FirstMap();
+    Map theMap = new FirstMap();
     public Game(GameStateManager gsm) {
         super(gsm);
         //SPAGHETTI CODE***********************************************************************************************
@@ -39,6 +38,7 @@ public class Game extends State{
     Render UI
      */
         //Render the MAPPPP I SAY****** SPHAGHETTI CODESSSS, in conjuction with screen
+
 
 
     }
