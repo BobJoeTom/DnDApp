@@ -10,8 +10,8 @@ import io.github.bobjoetom.state.GameStateManager;
 import io.github.bobjoetom.state.MainMenu;
 
 public class MainClass extends ApplicationAdapter {
-	public static final int WIDTH = 480;
-	public static final int HEIGHT = 800;
+	public static final float WIDTH = 450;
+	public static final float HEIGHT = 800;
 
 	public static final String TITLE = "DnD App";
 	private GameStateManager gameStateManager;

@@ -12,8 +12,8 @@ import io.github.bobjoetom.map.tiles.Wall;
 public class FirstMap extends Map {
 
     public FirstMap(){
-        setHEIGHT(100);
-        setWIDTH(100);
+        setMapHEIGHT(100);
+        setMapWIDTH(100);
         //THIS IS WHERE YOU ADD ROOMS
         for(int x = 0; x < 20; x++){
             for(int y = 0; y < 20; y++){

@@ -38,6 +38,7 @@ public class Game extends State{
     Render UI
      */
         //Render the MAPPPP I SAY****** SPHAGHETTI CODESSSS, in conjuction with screen
+        theMap.render(sb,player1);
 
 
 

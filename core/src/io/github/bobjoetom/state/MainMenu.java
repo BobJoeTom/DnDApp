@@ -21,15 +21,17 @@ public class MainMenu extends State{
 
     @Override
     protected void handleInput() {
-        if(Gdx.input.justTouched()){
-            gsm.push(new Game(gsm));
-            dispose();
+        if(Gdx.input.isTouched()){
+            if(Gdx.input.getDeltaX() > 100) {
+                gsm.push(new Game(gsm));
+                dispose();
+            }
         }
     }
 
     @Override
     public void update(float dt) {
-
+        handleInput();
     }
 
     @Override

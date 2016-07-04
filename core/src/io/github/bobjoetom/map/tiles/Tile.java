@@ -6,7 +6,7 @@ import com.badlogic.gdx.graphics.Texture;
  * Created by Brenden on 6/30/2016.
  */
 public class Tile {
-    private int x, y;
+    private float x, y;
     private String texturePath;
     private Texture texture;
     public final int WIDTH = 120;
@@ -20,19 +20,19 @@ public class Tile {
         this.texture = new Texture(texture);
     }
 
-    public int getX() {
+    public float getX() {
         return x;
     }
 
-    public void setX(int x) {
+    public void setX(float x) {
         this.x = x;
     }
 
-    public int getY() {
+    public float getY() {
         return y;
     }
 
-    public void setY(int y) {
+    public void setY(float y) {
         this.y = y;
     }
 
