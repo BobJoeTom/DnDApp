@@ -27,6 +27,7 @@ public class Map {
             Tile tile = getInitMap().get(i);
             float x = tile.getX();
             float y = tile.getY();
+
             getMap().get(i).add(Math.round(y*getMapWIDTH()+ x), tile);
         }
     }

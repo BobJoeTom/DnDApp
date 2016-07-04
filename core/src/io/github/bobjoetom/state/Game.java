@@ -12,7 +12,7 @@ import io.github.bobjoetom.map.Map;
  */
 public class Game extends State{
     Character player1;
-    Map theMap = new FirstMap();
+    FirstMap theMap = new FirstMap();
     public Game(GameStateManager gsm) {
         super(gsm);
         //SPAGHETTI CODE***********************************************************************************************

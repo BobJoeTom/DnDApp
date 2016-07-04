@@ -13,6 +13,10 @@ public class MainMenu extends State{
 
     private Texture background;
     private Texture playBtn;
+    boolean touched = false;
+    int yPosistion1 = 0;
+    int yPosistion2 = 0;
+
     public MainMenu(GameStateManager gsm) {
         super(gsm);
         background = new Texture("BackGround.png");
@@ -21,12 +25,24 @@ public class MainMenu extends State{
 
     @Override
     protected void handleInput() {
-        if(Gdx.input.isTouched()){
-            if(Gdx.input.getDeltaX() > 100) {
+        if(Gdx.input.justTouched()&& touched == false){
+            yPosistion1 = Gdx.input.getY();
+            touched = true;
+        }
+        if(Gdx.input.isTouched() == false){
+            touched = false;
+        }
+        if(Gdx.input.isTouched() && touched){
+            yPosistion2 = Gdx.input.getY();
+            if(yPosistion2-yPosistion1>200){
                 gsm.push(new Game(gsm));
                 dispose();
             }
         }
+        /*
+
+        */
+        System.out.println(touched);
     }
 
     @Override
