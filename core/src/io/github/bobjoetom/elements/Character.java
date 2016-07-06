@@ -19,6 +19,7 @@ public class Character {
     private Race race;
     private CharClass charClass;
 
+    //TODO MAKE SURE WEAPON AND ARMOR GET A CHARACTER FOR USER AND ATTACKER
     private Weapon weaponItem;
     private Armor armorItem;
 
@@ -35,8 +36,9 @@ public class Character {
     private int strength;
 
     //Textures
-    private String texturePath;//TODO will be race
+    private String texturePath;//TODO will be race, setRace will also set texture
     private Texture texture;
+
 
     private ArrayList<Item> inventory = new ArrayList<Item>();
     private ArrayList<Status> statusAffects = new ArrayList<Status>();
@@ -56,6 +58,12 @@ public class Character {
         dexiterity = 0;
         intelli = 0;
         strength = 0;
+    }
+
+    public void update(){
+        for(int i = 0; i <statusAffects.size(); i ++){
+            statusAffects.get(i).getAffect();
+        }
     }
 
 
