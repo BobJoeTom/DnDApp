@@ -8,6 +8,7 @@ import io.github.bobjoetom.elements.CharClass.CharClass;
 import io.github.bobjoetom.elements.Races.Race;
 import io.github.bobjoetom.elements.Weapons.Weapon;
 import io.github.bobjoetom.elements.armor.Armor;
+import io.github.bobjoetom.elements.status.Status;
 
 /**
  * Created by Brenden on 6/30/2016.
@@ -38,6 +39,7 @@ public class Character {
     private Texture texture;
 
     private ArrayList<Item> inventory = new ArrayList<Item>();
+    private ArrayList<Status> statusAffects = new ArrayList<Status>();
 
     public Character() {
         x = 0;
